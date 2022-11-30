@@ -1,0 +1,18 @@
+# pwd : /home/ajt200/analysis/170101_Chris_H3K9me2_ChIP/WT/snakemake_ChIPseq_t2t-col.20210610/scripts
+
+Universe   = vanilla
+Executable = /bin/bash
+Transfer_executable = False
+should_transfer_files = NO
+Arguments = "/home/ajt200/analysis/170101_Chris_H3K9me2_ChIP/WT/snakemake_ChIPseq_t2t-col.20210610/scripts/bigwigCompare_log2ChIPcontrol_bw.sh WT_H3K9me2_Rep1_ChIP WT_H3K9me2_Rep1_input 1 1bp 24"
+Requirements = OpSys == "LINUX" && Arch == "X86_64"  && TARGET.FileSystemDomain == "plantsci.internal.cam.ac.uk"
+rank = -TotalCpus
+request_memory = 40000
+request_cpus = 24
+getenv = True
+Log = log-2021-08-16_20-17-30.txt
+Input = 
+Output = stdout-2021-08-16_20-17-30.txt
+Error = error-2021-08-16_20-17-30.txt
+Notification = never
+Queue
